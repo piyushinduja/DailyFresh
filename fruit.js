@@ -1,7 +1,4 @@
 const loadPage = () => {
-    // if(localStorage.getItem('items')) {
-
-    // }
 }
 const addItem = (name,price) => {
     let count = 1;
