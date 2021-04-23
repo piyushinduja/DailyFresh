@@ -1,198 +1,212 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <style>
-      a:link {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-      }
 
-      a:visited {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-      }
+<head>
+  <style>
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
 
-      a:hover {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-      }
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
 
-      a:active {
-        color: white;
-        background-color: transparent;
-        text-decoration: none;
-      }
-    </style>
+    a:hover {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
 
-    <meta content="en-in" http-equiv="Content-Language" />
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-    <title>Cart</title>
-    <style type="text/css">
-      .auto-style1 {
-        text-align: right;
-      }
+    a:active {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+  </style>
 
-      p.MsoNormal {
-        margin-top: 0cm;
-        margin-right: 0cm;
-        margin-bottom: 8pt;
-        margin-left: 0cm;
-        line-height: 107%;
-        font-size: 11pt;
-        font-family: "Calibri", sans-serif;
-      }
+  <meta content="en-in" http-equiv="Content-Language" />
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Cart</title>
+  <style type="text/css">
+    .auto-style1 {
+      text-align: right;
+    }
 
-      .auto-style2 {
-        text-align: center;
-        background-color: #00ff00;
-      }
+    p.MsoNormal {
+      margin-top: 0cm;
+      margin-right: 0cm;
+      margin-bottom: 8pt;
+      margin-left: 0cm;
+      line-height: 107%;
+      font-size: 11pt;
+      font-family: "Calibri", sans-serif;
+    }
 
-      .auto-style3 {
-        color: #ffffff;
-        background-color: #00ff00;
-      }
+    .auto-style2 {
+      text-align: center;
+      background-color: #00ff00;
+    }
 
-      .auto-style4 {
-        text-align: center;
-      }
+    .auto-style3 {
+      color: #ffffff;
+      background-color: #00ff00;
+    }
 
-      .auto-style5 {
-        font-family: "Cooper Black";
-        color: #ffffff;
-      }
+    .auto-style4 {
+      text-align: center;
+    }
 
-      .auto-style6 {
-        color: #ffffff;
-      }
+    .auto-style5 {
+      font-family: "Cooper Black";
+      font-size: 20px;
+      color: #ffffff;
+    }
 
-      .auto-style7 {
-        font-family: "Cooper Black";
-      }
+    .auto-style6 {
+      color: #ffffff;
+    }
 
-      .auto-style8 {
-        text-align: center;
-        color: #ffffff;
-        background-color: #00ff00;
-      }
+    .auto-style7 {
+      font-family: "Cooper Black";
+    }
 
-      .auto-style9 {
-        text-align: right;
-        font-family: "Cooper Black";
-        color: #ffffff;
-      }
+    .auto-style8 {
+      text-align: center;
+      color: #ffffff;
+      background-color: #00ff00;
+    }
 
-      .auto-style10 {
-        text-align: left;
-      }
+    .auto-style9 {
+      text-align: right;
+      font-family: "Cooper Black";
+      color: #ffffff;
+    }
 
-      .auto-style11 {
-        color: #ffffff;
-        background-color: #00ff00;
-        font-family: "Cooper Black";
-      }
+    .auto-style10 {
+      text-align: left;
+    }
 
-      .button1 {
-        border: none;
-        color: #00ff00;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-        background-color: #ffffff;
+    .auto-style11 {
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #00ff00;
+      font-family: "Cooper Black";
+    }
+
+    .auto-style12 {
+      font-size: 25px;
+      color: #ffffff;
+      background-color: #00ff00;
+      font-family: "Cooper Black";
+    }
+
+    .button1 {
+      border: none;
+      color: #00ff00;
+      font-family: "Cooper Black";
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      background-color: #ffffff;
+    }
+  </style>
+  <script type="text/javascript">
+    function FP_preloadImgs() {
+      //v1.0
+      var d = document,
+        a = arguments;
+      if (!d.FP_imgs) d.FP_imgs = new Array();
+      for (var i = 0; i < a.length; i++) {
+        d.FP_imgs[i] = new Image();
+        d.FP_imgs[i].src = a[i];
       }
-    </style>
-    <script type="text/javascript">
-      function FP_preloadImgs() {
-        //v1.0
-        var d = document,
-          a = arguments;
-        if (!d.FP_imgs) d.FP_imgs = new Array();
-        for (var i = 0; i < a.length; i++) {
-          d.FP_imgs[i] = new Image();
-          d.FP_imgs[i].src = a[i];
+    }
+
+    function FP_swapImg() {
+      //v1.0
+      var doc = document,
+        args = arguments,
+        elm,
+        n;
+      doc.$imgSwaps = new Array();
+      for (n = 2; n < args.length; n += 2) {
+        elm = FP_getObjectByID(args[n]);
+        if (elm) {
+          doc.$imgSwaps[doc.$imgSwaps.length] = elm;
+          elm.$src = elm.src;
+          elm.src = args[n + 1];
         }
       }
+    }
 
-      function FP_swapImg() {
-        //v1.0
-        var doc = document,
-          args = arguments,
-          elm,
-          n;
-        doc.$imgSwaps = new Array();
-        for (n = 2; n < args.length; n += 2) {
-          elm = FP_getObjectByID(args[n]);
-          if (elm) {
-            doc.$imgSwaps[doc.$imgSwaps.length] = elm;
-            elm.$src = elm.src;
-            elm.src = args[n + 1];
-          }
+    function FP_getObjectByID(id, o) {
+      //v1.0
+      var c, el, els, f, m, n;
+      if (!o) o = document;
+      if (o.getElementById) el = o.getElementById(id);
+      else if (o.layers) c = o.layers;
+      else if (o.all) el = o.all[id];
+      if (el) return el;
+      if (o.id == id || o.name == id) return o;
+      if (o.childNodes) c = o.childNodes;
+      if (c)
+        for (n = 0; n < c.length; n++) {
+          el = FP_getObjectByID(id, c[n]);
+          if (el) return el;
         }
-      }
-
-      function FP_getObjectByID(id, o) {
-        //v1.0
-        var c, el, els, f, m, n;
-        if (!o) o = document;
-        if (o.getElementById) el = o.getElementById(id);
-        else if (o.layers) c = o.layers;
-        else if (o.all) el = o.all[id];
-        if (el) return el;
-        if (o.id == id || o.name == id) return o;
-        if (o.childNodes) c = o.childNodes;
-        if (c)
-          for (n = 0; n < c.length; n++) {
-            el = FP_getObjectByID(id, c[n]);
+      f = o.forms;
+      if (f)
+        for (n = 0; n < f.length; n++) {
+          els = f[n].elements;
+          for (m = 0; m < els.length; m++) {
+            el = FP_getObjectByID(id, els[n]);
             if (el) return el;
           }
-        f = o.forms;
-        if (f)
-          for (n = 0; n < f.length; n++) {
-            els = f[n].elements;
-            for (m = 0; m < els.length; m++) {
-              el = FP_getObjectByID(id, els[n]);
-              if (el) return el;
-            }
-          }
-        return null;
-      }
+        }
+      return null;
+    }
       // -->
-    </script>
-    <script src="cart.js"></script>
-  </head>
+  </script>
+  <script src="cart.js"></script>
+</head>
 
-  <body onload="loadCart()" style="background-color: #00ff00">
-    <table style="width: 100%">
-      <tr>
-        <td class="auto-style5" style="width: 100px">
-          <a href="home.html">Home</a>
-        </td>
-        <td class="auto-style5" style="width: 100px">
-          <a href="login.html">Login</a>
-        </td>
-        <td class="auto-style5" style="width: 100px">
-          <a href="about_us.html">Contact Us</a>
-        </td>
-        <td class="auto-style9">
-          <h1>DailyFresh.com</h1>
-        </td>
-      </tr>
-    </table>
-    <table style="width: 100%">
-      <tr>
-        <td class="auto-style10">
-          <h1 class="auto-style5">Cart</h1>
-        </td>
-      </tr>
-    </table>
-    <table style="width: 100%">
-      <tbody id="cartTable"></tbody>
-    </table>
-  </body>
+<body onload="loadCart()" style="background-color: #00ff00">
+  <table style="width: 100%">
+    <tr>
+      <td class="auto-style5" style="width: 100px">
+        <a href="home.html">Home</a>
+      </td>
+      <td class="auto-style5" style="width: 100px">
+        <a href="login.html">Login</a>
+      </td>
+      <td class="auto-style5" style="width: 100px">
+        <a href="about_us.html">Contact Us</a>
+      </td>
+      <td class="auto-style9">
+        <h1>DailyFresh.com</h1>
+      </td>
+    </tr>
+  </table>
+  <table style="width: 100%">
+    <tr>
+      <td class="auto-style10">
+        <h1 class="auto-style5" style="font-size: 25px;">Cart</h1>
+      </td>
+    </tr>
+  </table>
+  <table style="width: 100%">
+    <tbody id="cartTable"></tbody>
+  </table>
+  <button id="place_order" onclick="placed_order_message()" class="button button1">Place Order</button>
+</body>
+
 </html>

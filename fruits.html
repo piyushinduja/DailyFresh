@@ -62,6 +62,7 @@
 
 		.auto-style5 {
 			font-family: "Cooper Black";
+			font-size: 20px;
 			color: #ffffff;
 		}
 
@@ -70,6 +71,7 @@
 		}
 
 		.auto-style7 {
+			font-size: 20px;
 			font-family: "Cooper Black";
 		}
 
@@ -174,76 +176,76 @@
 		<table style="width: 100%">
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="apples.jpg" width="200" />
+					<img alt="Apples" height="200" src="Apples.jpg" width="200" />
 				</td>
 				<td class="auto-style3" style="width: 318px">
 					<span class="auto-style7">Apples</span><br class="auto-style5" />
 				</td>
 
 				<td class="auto-style2" style="width: 300px">
-					<span class="auto-style5">Market Price:&nbsp; Rs. 150/kg</span><br class="auto-style5" />
+					<span class="auto-style5">Market Price:&nbsp; Rs. 160/kg</span><br class="auto-style5" />
 					<span class="auto-style5">Our Price:&nbsp; Rs. 140/kg</span>
 				</td>
 				<td class="auto-style2">
-					<div id="apple-ac" onclick="addItem('apple','140')" class="button button2">
+					<div id="Apples-ac" onclick="addItem('Apples','140')" class="button button2">
 						Add To Cart
 					</div>
 					<!-- copy this on all items -->
-					<div id="apple-btn" style="display: none">
-						<button onclick="removeItem('apple')">Remove</button>
-						<span id="apple-count"></span>
-						<button onclick="addItem('apple','140')">Add</button>
+					<div id="Apples-btn">
+						<button onclick="removeItem('Apples')" style="display: none">Remove</button>
+						<span id="Apples-count"></span>
+						<button onclick="addItem('Apples','140')" style="display: none">Add</button>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="orange.jpg" width="200" />
+					<img alt="" height="200" src="Oranges.jpg" width="200" />
 				</td>
 				<td class="auto-style11" style="width: 318px">
-					<span class="auto-style5">Orange</span><br class="auto-style5" />
+					<span class="auto-style7">Oranges</span><br class="auto-style5" />
 				</td>
 
 				<td class="auto-style8" style="width: 300px">
 					<span class="auto-style5">Market Price:&nbsp; Rs. 100/kg</span><br class="auto-style5" />
-					<span class="auto-style5">Our Price:&nbsp; Rs. 92/kg</span>
+					<span class="auto-style5">Our Price:&nbsp; Rs. 90/kg</span>
 				</td>
 				<td class="auto-style2">
-					<div id="orange-ac" onclick="addItem('orange','92')" class="button button2">
+					<div id="Oranges-ac" onclick="addItem('Oranges','90')" class="button button2">
 						Add To Cart
 					</div>
-					<div id="orange-btn" style="display: none">
-						<button onclick="removeItem('orange')">Remove</button>
-						<span id="orange-count"></span>
-						<button onclick="addItem('orange','92')">Add</button>
+					<div id="Oranges-btn" style="display: none">
+						<button onclick="removeItem('Oranges')">Remove</button>
+						<span id="Oranges-count" class="auto-style11"></span>
+						<button onclick="addItem('Oranges','90')">Add</button>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="mango.jpg" width="200" />
+					<img alt="" height="200" src="Mangoes.jpg" width="200" />
 				</td>
 				<td class="auto-style3" style="width: 318px">
-					<span class="auto-style7">Alphonso Mangoes</span><br class="auto-style5" />
+					<span class="auto-style7">Mangoes</span><br class="auto-style5" />
 				</td>
 				<td class="auto-style8" style="width: 300px">
-					<span class="auto-style5">Market Price:&nbsp; Rs. 450/kg</span><br class="auto-style5" />
-					<span class="auto-style5">Our Price:&nbsp; Rs. 420/kg</span>
+					<span class="auto-style5">Market Price:&nbsp; Rs. 350/kg</span><br class="auto-style5" />
+					<span class="auto-style5">Our Price:&nbsp; Rs. 320/kg</span>
 				</td>
 				<td class="auto-style2">
-					<div id="mangoes-ac" class="button button2" onclick="addItem('mangoes','420')">
+					<div id="Mangoes-ac" class="button button2" onclick="addItem('Mangoes','320')">
 						Add To Cart
 					</div>
-					<div id="mangoes-btn" style="display: none">
-						<button onclick="removeItem('mangoes')">Remove</button>
-						<span id="mangoes-count"></span>
-						<button onclick="addItem('mangoes','420')">Add</button>
+					<div id="Mangoes-btn" style="display: none">
+						<button onclick="removeItem('Mangoes')">Remove</button>
+						<span id="Mangoes-count"></span>
+						<button onclick="addItem('Mangoes','320')">Add</button>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="papaya.jpg" width="200" />
+					<img alt="Papaya" height="200" src="Papaya.jpg" width="200" />
 				</td>
 				<td class="auto-style11" style="width: 318px">
 					<span class="auto-style5">Papaya</span><br class="auto-style5" />
@@ -253,29 +255,39 @@
 					<span class="auto-style5">Our Price:&nbsp; Rs. 35/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Papaya-ac" onclick="addItem('Papaya','35')" class="button button2">Add To Cart</div>
+					<div id="Papaya-btn" style="display: none">
+						<button onclick="removeItem('Papaya')">Remove</button>
+						<span id="Papaya-count"></span>
+						<button onclick="addItem('Papaya','35')">Add</button>
+					</div>
 				</td>
 			</tr>
-
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="watermelon.jpg" width="200" />
+					<img alt="Watermelon" height="200" src="Watermelon.jpg" width="200" />
 				</td>
 				<td class="auto-style3" style="width: 318px">
 					<span class="auto-style7">Watermelon</span><br class="auto-style5" />
 				</td>
 				<td class="auto-style8" style="width: 300px">
-					<span class="auto-style5">Market Price:&nbsp; Rs. 20/kg</span><br class="auto-style5" />
-					<span class="auto-style5">Our Price:&nbsp; Rs. 17/kg</span>
+					<span class="auto-style5">Market Price:&nbsp; Rs. 25/kg</span><br class="auto-style5" />
+					<span class="auto-style5">Our Price:&nbsp; Rs. 20/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Watermelon-ac" onclick="addItem('Watermelon','20')" class="button button2">Add To Cart
+					</div>
+					<div id="Watermelon-btn" style="display: none">
+						<button onclick="removeItem('Watermelon')">Remove</button>
+						<span id="Watermelon-count"></span>
+						<button onclick="addItem('Watermelon','20')">Add</button>
+					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="strawberry.jpg" width="200" />
+					<img alt="Strawberry" height="200" src="Strawberry.jpg" width="200" />
 				</td>
 				<td class="auto-style3" style="width: 318px">
 					<span class="auto-style7">Strawberry</span><br class="auto-style5" />
@@ -285,13 +297,19 @@
 					<span class="auto-style5">Our Price:&nbsp; Rs. 225/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Strawberry-ac" onclick="addItem('Strawberry','225')" class="button button2">Add To Cart
+					</div>
+					<div id="Strawberry-btn" style="display: none">
+						<button onclick="removeItem('Strawberry')">Remove</button>
+						<span id="Strawberry-count"></span>
+						<button onclick="addItem('Strawberry','225')">Add</button>
+					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="chikoo.jpg" width="200" />&nbsp;
+					<img alt="Chikoo" height="200" src="Chikoo.jpg" width="200" />&nbsp;
 				</td>
 				<td class="auto-style11" style="width: 318px">
 					<span class="auto-style5">Chikoo</span><br class="auto-style5" />
@@ -301,13 +319,18 @@
 					<span class="auto-style5">Our Price:&nbsp; Rs. 70/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Chikoo-ac" onclick="addItem('Chikoo','70')" class="button button2">Add To Cart</div>
+					<div id="Chikoo-btn" style="display: none">
+						<button onclick="removeItem('Chikoo')">Remove</button>
+						<span id="Chikoo-count"></span>
+						<button onclick="addItem('Chikoo','70')">Add</button>
+					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="kiwi.jpg" width="200" />&nbsp;
+					<img alt="Kiwi" height="200" src="Kiwi.jpg" width="200" />&nbsp;
 				</td>
 				<td class="auto-style3" style="width: 318px">
 					<span class="auto-style7">Kiwi</span><br class="auto-style5" />
@@ -317,29 +340,39 @@
 					<span class="auto-style5">Our Price:&nbsp; Rs. 180/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Kiwi-ac" onclick="addItem('Kiwi','180')" class="button button2">Add To Cart</div>
+					<div id="Kiwi-btn" style="display: none">
+						<button onclick="removeItem('Kiwi')">Remove</button>
+						<span id="Kiwi-count"></span>
+						<button onclick="addItem('Kiwi','180')">Add</button>
+					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="bananas.jpg" width="200" />&nbsp;
+					<img alt="Bananas" height="200" src="Bananas.jpg" width="200" />&nbsp;
 				</td>
 				<td class="auto-style3" style="width: 318px">
-					<span class="auto-style7">Banana</span><br class="auto-style5" />
+					<span class="auto-style7">Bananas</span><br class="auto-style5" />
 				</td>
 				<td class="auto-style8" style="width: 300px">
 					<span class="auto-style5">Market Price:&nbsp; Rs. 25/kg</span><br class="auto-style5" />
 					<span class="auto-style5">Our Price:&nbsp; Rs. 20/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Bananas-ac" onclick="addItem('Bananas','20')" class="button button2">Add To Cart</div>
+					<div id="Bananas-btn" style="display: none">
+						<button onclick="removeItem('Bananas')">Remove</button>
+						<span id="Bananas-count"></span>
+						<button onclick="addItem('Bananas','20')">Add</button>
+					</div>
 				</td>
 			</tr>
 
 			<tr>
 				<td style="width: 350px">
-					<img alt="" height="200" src="guava.jpg" width="200" />&nbsp;
+					<img alt="Guava" height="200" src="Guava.jpg" width="200" />&nbsp;
 				</td>
 				<td class="auto-style3" style="width: 318px">
 					<span class="auto-style7">Guava</span><br class="auto-style5" />
@@ -349,7 +382,12 @@
 					<span class="auto-style5">Our Price:&nbsp; Rs. 75/kg</span>
 				</td>
 				<td class="auto-style2">
-					<button class="button button2">Add To Cart</button>
+					<div id="Guava-ac" onclick="addItem('Guava','75')" class="button button2">Add To Cart</div>
+					<div id="Guava-btn" style="display: none">
+						<button onclick="removeItem('Guava')">Remove</button>
+						<span id="Guava-count"></span>
+						<button onclick="addItem('Guava','75')">Add</button>
+					</div>
 				</td>
 			</tr>
 		</table>

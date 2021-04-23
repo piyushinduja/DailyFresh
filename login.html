@@ -11,8 +11,7 @@
         border: 3px solid #f1f1f1;
       }
 
-      input[type="text"],
-      input[type="password"] {
+      input[type=text], input[type=password] {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -68,11 +67,25 @@
           width: 100%;
         }
       }
+    .auto-style1 {
+	color: #FFFFFF;
+	font-size: x-large;
+	font-family: "Cooper Black";
+}
+.auto-style2 {
+	font-family: "Cooper Black";
+	margin-top: 24px;
+}
+.auto-style3 {
+	color: #00FF00;
+	font-weight: bold;
+	font-family: "Cooper Black";
+}
     </style>
     <script src="login.js"></script>
   </head>
   <body>
-    <h2 style="color: #ffffff"><center>Login to Continue</center></h2>
+    <h2 style="color: #ffffff"><center class="auto-style1">Login to Continue</center></h2>
 
     <div class="imgcontainer">
       <img
@@ -86,29 +99,16 @@
 
     <form>
       <div class="container" style="background-color: #ffffff">
-        <label for="name"><b>Name</b></label>
-        <input
-          type="text"
-          placeholder="Enter Name"
-          id="name"
-          name="name"
-          required
-        />
+        <div>
+        	<span class="auto-style3">
+        <label for="name">Name</label></span>&nbsp;
+			<input name="Text2" type="text"></div>
+      <div>
+          <span class="auto-style3">
+        <label for="email">Email</label></span> <input name="Text1" type="text"></div>
 
-        <label for="email"><b>Email</b></label>
-        <input
-          type="email"
-          placeholder="Enter Email"
-          id="email"
-          name="email"
-          required
-        />
-
-        <button type="button" onclick="submitDetails()">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember" /> Remember
-          me
-        </label>
+        <button type="button" onclick="submitDetails()" style="font-size: 20px;" class="auto-style2">Login</button>
+        
       </div>
 
       <!-- <div class="container" style="background-color: #ffffff">
