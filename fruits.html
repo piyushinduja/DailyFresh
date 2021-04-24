@@ -109,6 +109,20 @@
 
       .button2 {
         background-color: #ffffff;
+        font-style: "Cooper Black";
+      }
+      .button3{
+        border: none;
+        color: #00ff00;
+        width: 40px;
+        height: 45px;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #ffffff;
       }
     </style>
     <script src="fruit.js" type="text/javascript">
@@ -164,11 +178,11 @@
       <table style="width: 100%">
         <tr>
           <td class="auto-style10">
-            <h1 class="auto-style5">Fruits</h1>
+            <h1 style="font-size: 30px;" class="auto-style5">Fruits</h1>
           </td>
-          <td class="auto-style1">
+          <td style="text-align: right;" class="auto-style1">
             <a href="cart.html"
-              ><img alt="" height="40" src="cart.jpg" width="40" /></a
+              ><img alt="Cart" height="40" src="cart.jpg" width="40" /></a
             >&nbsp;
           </td>
         </tr>
@@ -197,9 +211,9 @@
             </div>
             <!-- copy this on all items -->
             <div id="Apples-btn">
-              <button onclick="removeItem('Apples')">Remove</button>
-              <span id="Apples-count"></span>
-              <button onclick="addItem('Apples','140')">Add</button>
+              <button class="button3" onclick="removeItem('Apples')">-</button>
+              <span id="Apples-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Apples','140')">+</button>
             </div>
           </td>
         </tr>
@@ -225,9 +239,9 @@
               Add To Cart
             </div>
             <div id="Oranges-btn" style="display: none">
-              <button onclick="removeItem('Oranges')">Remove</button>
+              <button class="button3" onclick="removeItem('Oranges')">-</button>
               <span id="Oranges-count" class="auto-style11"></span>
-              <button onclick="addItem('Oranges','90')">Add</button>
+              <button class="button3" onclick="addItem('Oranges','90')">+</button>
             </div>
           </td>
         </tr>
@@ -252,9 +266,9 @@
               Add To Cart
             </div>
             <div id="Mangoes-btn" style="display: none">
-              <button onclick="removeItem('Mangoes')">Remove</button>
-              <span id="Mangoes-count"></span>
-              <button onclick="addItem('Mangoes','320')">Add</button>
+              <button class="button3" onclick="removeItem('Mangoes')">-</button>
+              <span id="Mangoes-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Mangoes','320')">+</button>
             </div>
           </td>
         </tr>
@@ -279,9 +293,9 @@
               Add To Cart
             </div>
             <div id="Papaya-btn" style="display: none">
-              <button onclick="removeItem('Papaya')">Remove</button>
-              <span id="Papaya-count"></span>
-              <button onclick="addItem('Papaya','35')">Add</button>
+              <button class="button3" onclick="removeItem('Papaya')">-</button>
+              <span id="Papaya-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Papaya','35')">+</button>
             </div>
           </td>
         </tr>
@@ -312,9 +326,9 @@
               Add To Cart
             </div>
             <div id="Watermelon-btn" style="display: none">
-              <button onclick="removeItem('Watermelon')">Remove</button>
-              <span id="Watermelon-count"></span>
-              <button onclick="addItem('Watermelon','20')">Add</button>
+              <button class="button3" onclick="removeItem('Watermelon')">-</button>
+              <span id="Watermelon-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Watermelon','20')">+</button>
             </div>
           </td>
         </tr>
@@ -346,9 +360,9 @@
               Add To Cart
             </div>
             <div id="Strawberry-btn" style="display: none">
-              <button onclick="removeItem('Strawberry')">Remove</button>
-              <span id="Strawberry-count"></span>
-              <button onclick="addItem('Strawberry','225')">Add</button>
+              <button class="button3" onclick="removeItem('Strawberry')">-</button>
+              <span id="Strawberry-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Strawberry','225')">+</button>
             </div>
           </td>
         </tr>
@@ -374,9 +388,9 @@
               Add To Cart
             </div>
             <div id="Chikoo-btn" style="display: none">
-              <button onclick="removeItem('Chikoo')">Remove</button>
-              <span id="Chikoo-count"></span>
-              <button onclick="addItem('Chikoo','70')">Add</button>
+              <button class="button3" onclick="removeItem('Chikoo')">-</button>
+              <span id="Chikoo-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Chikoo','70')">+</button>
             </div>
           </td>
         </tr>
@@ -402,9 +416,9 @@
               Add To Cart
             </div>
             <div id="Kiwi-btn" style="display: none">
-              <button onclick="removeItem('Kiwi')">Remove</button>
-              <span id="Kiwi-count"></span>
-              <button onclick="addItem('Kiwi','180')">Add</button>
+              <button class="button3" onclick="removeItem('Kiwi')">-</button>
+              <span id="Kiwi-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Kiwi','180')">+</button>
             </div>
           </td>
         </tr>
@@ -435,9 +449,9 @@
               Add To Cart
             </div>
             <div id="Bananas-btn" style="display: none">
-              <button onclick="removeItem('Bananas')">Remove</button>
-              <span id="Bananas-count"></span>
-              <button onclick="addItem('Bananas','20')">Add</button>
+              <button class="button3" onclick="removeItem('Bananas')">-</button>
+              <span id="Bananas-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Bananas','20')">+</button>
             </div>
           </td>
         </tr>
@@ -463,9 +477,9 @@
               Add To Cart
             </div>
             <div id="Guava-btn" style="display: none">
-              <button onclick="removeItem('Guava')">Remove</button>
-              <span id="Guava-count"></span>
-              <button onclick="addItem('Guava','75')">Add</button>
+              <button class="button3" onclick="removeItem('Guava')">-</button>
+              <span id="Guava-count" class="auto-style11"></span>
+              <button class="button3" onclick="addItem('Guava','75')">+</button>
             </div>
           </td>
         </tr>
