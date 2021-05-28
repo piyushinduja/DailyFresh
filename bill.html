@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bill</title>
     <style>
-        th,
-        td {
-            width: 150px;
-            text-align: center;
-            border: 1px solid #00ff00;
-            padding: 5px
-        }
+      th,
+      td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid #00ff00;
+        padding: 5px;
+      }
 
-        .style1 {
-            background-color: white;
-            font-family: "Cooper Black";
-            color: #00ff00;
-            padding: 5px;
-            font-size: 20px;
-        }
+      .style1 {
+        background-color: white;
+        font-family: "Cooper Black";
+        color: #00ff00;
+        padding: 5px;
+        font-size: 20px;
+      }
 
-        .style2 {
-            width: 100%;
-            padding: 50px;
-            border-collapse: collapse;
-            border: 1px solid #00ff00;
-            text-align: center;
-            border-spacing: 0 15px;
-        }
+      .style2 {
+        width: 100%;
+        padding: 50px;
+        border-collapse: collapse;
+        border: 1px solid #00ff00;
+        text-align: center;
+        border-spacing: 0 15px;
+      }
 
-        .style3 {
-            border-right: hidden;
-        }
-
+      .style3 {
+        border-right: hidden;
+      }
     </style>
+    <script src="bill.js"></script>
+  </head>
 
-</head>
-
-<body style="background-color: #00ff00;">
+  <body onload="getBill()" style="background-color: #00ff00">
     <div class="style1">
-        <div>
-            <h1 style="text-align: center;">DailyFresh.com</h1>
-        </div>
-        <div class="float-child">
-            <p>Time and date of order:</p>
-            <p>Date of Order: 15/05/2021 </p>
-                <p>Time of Order: 15:03:41</p>
-        </div>
-
+      <div>
+        <h1 style="text-align: center">DailyFresh.com</h1>
+      </div>
+      <div class="float-child">
+        <p>Time and date of order:</p>
+        <p id="date"></p>
+        <p id="time"></p>
+      </div>
     </div>
     <div class="style1">
-        <table class="style2">
-            <tr class="style3">
-                <th>Item</th>
-                <th>Quantity</th>
-                <th>Price</th>
-            </tr>
-            <tr class="style3"></tr>
-            <td>Apples</td>
-            <td>3 kgs</td>
-            <td>Rs. 520</td>
-            </tr>
-            <tr class="style3"></tr>
-            <td>Bananas</td>
-            <td>1 kgs</td>
-            <td>Rs. 20</td>
-            </tr>
-        </table>
-        
-            <div>
-                <p>Thank You for shopping with DailyFresh.Com</p>
-                <p>Your order will be delivered shortly.</p>
-                <p>Grand Total: Rs. 540</p>
-            </div>
-    
-</div>
-</body>
+      <table class="style2">
+        <tr class="style3">
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+        <tbody id="inner-table"></tbody>
+      </table>
 
+      <div>
+        <p>Thank You for shopping with DailyFresh.Com</p>
+        <p>Your order will be delivered shortly.</p>
+        <p id="grand-total">Grand Total: Rs.</p>
+      </div>
+    </div>
+  </body>
 </html>

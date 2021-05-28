@@ -2,6 +2,7 @@ const loadPage = () => {
   let items = JSON.parse(localStorage.getItem("items"));
   if (items) {
     items.forEach((c) => {
+      console.log(c);
       if (c.count == 0) {
         document.getElementById(`${c.name}-ac`).style.display = "inline";
         document.getElementById(`${c.name}-btn`).style.display = "none";
