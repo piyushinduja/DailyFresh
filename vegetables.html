@@ -93,6 +93,12 @@
       text-align: left;
     }
 
+    .auto-style11 {
+        color: #ffffff;
+        background-color: #00ff00;
+        font-family: "Cooper Black";
+      }
+
     .button {
       border: none;
       color: #00ff00;
@@ -108,6 +114,21 @@
     .button2 {
       background-color: #ffffff;
     }
+
+    .button3{
+        border: none;
+        color: #00ff00;
+        width: 40px;
+        height: 45px;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline;
+        font-size: 20px;
+        cursor: pointer;
+        background-color: #ffffff;
+      }
+
   </style>
   <script src="fruit.js" type="text/javascript">
     function FP_preloadImgs() {
@@ -213,9 +234,9 @@
         <td class="auto-style2">
           <div id="Tomatoes-ac" onclick="addItem('Tomatoes','25')" class="button button2">Add To Cart</div>
           <div id="Tomatoes-btn" style="display: none">
-            <button onclick="removeItem('Tomatoes')">Remove</button>
-            <span id="Tomatoes-count"></span>
-            <button onclick="addItem('Tomatoes','25')">Add</button>
+            <button class="button3" onclick="removeItem('Tomatoes')">-</button>
+            <span class="auto-style11" id="Tomatoes-count"></span>
+            <button class="button3" onclick="addItem('Tomatoes','25')">+</button>
           </div>
         </td>
       </tr>
@@ -234,9 +255,9 @@
         <td class="auto-style2">
           <div id="Bhindi-ac" onclick="addItem('Bhindi','40')" class="button button2">Add To Cart</div>
           <div id="Bhindi-btn" style="display: none">
-            <button onclick="removeItem('Bhindi')">Remove</button>
-            <span id="Bhindi-count"></span>
-            <button onclick="addItem('Bhindi','40')">Add</button>
+            <button class="button3" onclick="removeItem('Bhindi')">-</button>
+            <span class="auto-style11" id="Bhindi-count"></span>
+            <button class="button3" onclick="addItem('Bhindi','40')">+</button>
           </div>
         </td>
       </tr>
@@ -255,9 +276,9 @@
         <td class="auto-style2">
           <div id="Onions-ac" onclick="addItem('Onions','40')" class="button button2">Add To Cart</div>
           <div id="Onions-btn" style="display: none">
-            <button onclick="removeItem('Onions')">Remove</button>
-            <span id="Onions-count"></span>
-            <button onclick="addItem('Onions','40')">Add</button>
+            <button class="button3" onclick="removeItem('Onions')">-</button>
+            <span class="auto-style11" id="Onions-count"></span>
+            <button class="button3" onclick="addItem('Onions','40')">+</button>
           </div>
         </td>
       </tr>
@@ -276,9 +297,9 @@
         <td class="auto-style2">
           <div id="Potatoes-ac" onclick="addItem('Potatoes','20')" class="button button2">Add To Cart</div>
           <div id="Potatoes-btn" style="display: none">
-            <button onclick="removeItem('Potatoes')">Remove</button>
-            <span id="Potatoes-count"></span>
-            <button onclick="addItem('Potatoes','20')">Add</button>
+            <button class="button3" onclick="removeItem('Potatoes')">-</button>
+            <span class="auto-style11" id="Potatoes-count"></span>
+            <button class="button3" onclick="addItem('Potatoes','20')">+</button>
           </div>
         </td>
       </tr>
@@ -297,9 +318,9 @@
         <td class="auto-style2">
           <div id="Cucumber-ac" onclick="addItem('Cucumber','15')" class="button button2">Add To Cart</div>
           <div id="Cucumber-btn" style="display: none">
-            <button onclick="removeItem('Cucumber')">Remove</button>
-            <span id="Cucumber-count"></span>
-            <button onclick="addItem('Cucumber','15')">Add</button>
+            <button class="button3" onclick="removeItem('Cucumber')">-</button>
+            <span class="auto-style11" id="Cucumber-count"></span>
+            <button class="button3" onclick="addItem('Cucumber','15')">+</button>
           </div>
         </td>
       </tr>
@@ -318,9 +339,9 @@
         <td class="auto-style2">
           <div id="Beetroot-ac" onclick="addItem('Beetroot','35')" class="button button2">Add To Cart</div>
           <div id="Beetroot-btn" style="display: none">
-            <button onclick="removeItem('Beetroot')">Remove</button>
-            <span id="Beetroot-count"></span>
-            <button onclick="addItem('Beetroot','35')">Add</button>
+            <button class="button3" onclick="removeItem('Beetroot')">-</button>
+            <span class="auto-style11" id="Beetroot-count"></span>
+            <button class="button3" onclick="addItem('Beetroot','35')">+</button>
           </div>
         </td>
       </tr>
@@ -339,9 +360,9 @@
         <td class="auto-style2">
           <div id="Cauliflower-ac" onclick="addItem('Cauliflower','22')" class="button button2">Add To Cart</div>
           <div id="Cauliflower-btn" style="display: none">
-            <button onclick="removeItem('Cauliflower')">Remove</button>
-            <span id="Cauliflower-count"></span>
-            <button onclick="addItem('Cauliflower','22')">Add</button>
+            <button class="button3" onclick="removeItem('Cauliflower')">-</button>
+            <span class="auto-style11" id="Cauliflower-count"></span>
+            <button class="button3" onclick="addItem('Cauliflower','22')">+</button>
           </div>
         </td>
       </tr>
@@ -360,9 +381,9 @@
         <td class="auto-style2">
           <div id="Capsicum-ac" onclick="addItem('Capsicum','35')" class="button button2">Add To Cart</div>
           <div id="Capsicum-btn" style="display: none">
-            <button onclick="removeItem('Capsicum')">Remove</button>
-            <span id="Capsicum-count"></span>
-            <button onclick="addItem('Capsicum','35')">Add</button>
+            <button class="button3" onclick="removeItem('Capsicum')">-</button>
+            <span class="auto-style11" id="Capsicum-count"></span>
+            <button class="button3" onclick="addItem('Capsicum','35')">+</button>
           </div>
         </td>
       </tr>
@@ -381,9 +402,9 @@
         <td class="auto-style2">
           <div id="Carrot-ac" onclick="addItem('Carrot','25')" class="button button2">Add To Cart</div>
           <div id="Carrot-btn" style="display: none">
-            <button onclick="removeItem('Carrot')">Remove</button>
-            <span id="Carrot-count"></span>
-            <button onclick="addItem('Carrot','25')">Add</button>
+            <button class="button3" onclick="removeItem('Carrot')">-</button>
+            <span class="auto-style11" id="Carrot-count"></span>
+            <button class="button3" onclick="addItem('Carrot','25')">+</button>
           </div>
         </td>
       </tr>
@@ -402,9 +423,9 @@
         <td class="auto-style2">
           <div id="Cabbage-ac" onclick="addItem('Cabbage','18')" class="button button2">Add To Cart</div>
           <div id="Cabbage-btn" style="display: none">
-            <button onclick="removeItem('Cabbage')">Remove</button>
-            <span id="Cabbage-count"></span>
-            <button onclick="addItem('Cabbage','18')">Add</button>
+            <button class="button3" onclick="removeItem('Cabbage')">-</button>
+            <span class="auto-style11" id="Cabbage-count"></span>
+            <button class="button3" onclick="addItem('Cabbage','18')">+</button>
           </div>
         </td>
       </tr>
